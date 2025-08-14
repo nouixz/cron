@@ -1,68 +1,87 @@
 body {
-    background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 100%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .login-container {
-    background: #fff;
+    background: #f5f5f5;
     padding: 2.5rem 2rem;
     border-radius: 1.2rem;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.25),
+                0 1.5px 4px 0 #bdbdbd inset,
+                0 0.5px 1px 0 #fff inset;
     width: 350px;
     max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 3D effect */
+    border: 1.5px solid #bdbdbd;
 }
+
 .login-form h2 {
     margin-bottom: 1.5rem;
-    color: #2980b9;
+    color: #444;
     text-align: center;
+    text-shadow: 1px 1px 2px #bdbdbd;
 }
+
 .input-group {
     margin-bottom: 1.2rem;
 }
 .input-group label {
     display: block;
     margin-bottom: 0.4rem;
-    color: #333;
+    color: #555;
     font-weight: 500;
 }
 .input-group input {
     width: 100%;
     padding: 0.7rem;
-    border: 1px solid #ccc;
+    border: 1.5px solid #bdbdbd;
     border-radius: 0.5rem;
     font-size: 1rem;
-    transition: border 0.2s;
+    background: #ededed;
+    box-shadow: 0 1px 2px #e0e0e0 inset;
+    transition: border 0.2s, box-shadow 0.2s;
 }
 .input-group input:focus {
-    border: 1.5px solid #2980b9;
+    border: 1.5px solid #757575;
     outline: none;
+    box-shadow: 0 0 6px #bdbdbd;
 }
+
 button[type="submit"] {
     width: 100%;
     padding: 0.8rem;
-    background: #2980b9;
+    background: linear-gradient(90deg, #bdbdbd 0%, #757575 100%);
     color: #fff;
     border: none;
     border-radius: 0.5rem;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s;
+    box-shadow: 0 2px 8px 0 #bdbdbd;
+    transition: background 0.2s, box-shadow 0.2s;
 }
 button[type="submit"]:hover {
-    background: #2573a6;
+    background: linear-gradient(90deg, #757575 0%, #bdbdbd 100%);
+    box-shadow: 0 4px 16px 0 #bdbdbd;
 }
+
 .signup-link {
     margin-top: 1rem;
     text-align: center;
     font-size: 0.95rem;
 }
 .signup-link a {
-    color: #2980b9;
+    color: #757575;
     text-decoration: none;
     font-weight: 500;
 }

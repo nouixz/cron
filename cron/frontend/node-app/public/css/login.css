@@ -1,86 +1,85 @@
+
 body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png'), linear-gradient(135deg, #232526 0%, #414345 100%);
-    background-blend-mode: overlay;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .login-container {
-    background: rgba(40, 40, 40, 0.25);
-    backdrop-filter: blur(16px) saturate(120%);
-    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    background: #fff;
     padding: 2.5rem 2rem;
-    border-radius: 1.2rem;
-    box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.25),
-                0 1.5px 4px 0 #bdbdbd inset,
-                0 0.5px 1px 0 #fff inset;
-                    background: rgba(40, 40, 40, 0.25);
-                    backdrop-filter: blur(16px) saturate(120%);
-                    -webkit-backdrop-filter: blur(16px) saturate(120%);
-                    padding: 3.5rem 2.5rem;
-                    border-radius: 1.2rem;
-                    box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.25);
-                    width: 480px;
-                    max-width: 95vw;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1.5px solid rgba(200,200,200,0.18);
-                    transition: transform 0.25s cubic-bezier(.25,.8,.25,1);
+    border-radius: 0.7rem;
+    box-shadow: none;
+    width: 350px;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.login-form h2 {
+    margin-bottom: 1.5rem;
+    color: #222;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+}
 
 .input-group {
     margin-bottom: 1.2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .input-group label {
     display: block;
-                    text-shadow: none;
+    margin-bottom: 0.4rem;
     color: #555;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 0.98rem;
+    text-align: center;
 }
 .input-group input {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
     width: 100%;
     padding: 0.7rem;
-    border: 1.5px solid #bdbdbd;
-    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
     font-size: 1rem;
-    background: #ededed;
-    box-shadow: 0 1px 2px #e0e0e0 inset;
-                    text-align: center;
-    transition: border 0.2s, box-shadow 0.2s;
+    background: #fff;
+    color: #222;
+    box-shadow: none;
+    transition: border 0.2s;
+    display: block;
+    margin: 0;
 }
 .input-group input:focus {
-                    width: 90%;
+    border: 1.5px solid #43ea7a;
     outline: none;
-    box-shadow: 0 0 6px #bdbdbd;
 }
 
 button[type="submit"] {
-                    box-shadow: none;
-                    transition: border 0.2s, box-shadow 0.2s;
-                    display: block;
-                    margin: 0 auto;
-    background: linear-gradient(90deg, #43ea7a 0%, #1eae60 100%);
+    width: 100%;
+    padding: 0.8rem;
+    background: #43ea7a;
     color: #fff;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
-    box-shadow: 0 2px 8px 0 #1eae60;
-    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: none;
+    transition: background 0.2s;
 }
 button[type="submit"]:hover {
-    background: linear-gradient(90deg, #1eae60 0%, #43ea7a 100%);
-    box-shadow: 0 4px 16px 0 #43ea7a;
+    background: #1eae60;
 }
 

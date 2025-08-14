@@ -18,33 +18,36 @@ body {
     box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.25),
                 0 1.5px 4px 0 #bdbdbd inset,
                 0 0.5px 1px 0 #fff inset;
-    width: 350px;
-    max-width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1.5px solid rgba(200,200,200,0.18);
-    transition: transform 0.25s cubic-bezier(.25,.8,.25,1);
-}
-
-.login-form h2 {
-    margin-bottom: 1.5rem;
-    color: #444;
-    text-align: center;
-    text-shadow: 1px 1px 2px #bdbdbd;
-}
+                    background: rgba(40, 40, 40, 0.25);
+                    backdrop-filter: blur(16px) saturate(120%);
+                    -webkit-backdrop-filter: blur(16px) saturate(120%);
+                    padding: 3.5rem 2.5rem;
+                    border-radius: 1.2rem;
+                    box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.25);
+                    width: 480px;
+                    max-width: 95vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1.5px solid rgba(200,200,200,0.18);
+                    transition: transform 0.25s cubic-bezier(.25,.8,.25,1);
 
 .input-group {
     margin-bottom: 1.2rem;
 }
 .input-group label {
     display: block;
-    margin-bottom: 0.4rem;
+                    text-shadow: none;
     color: #555;
     font-weight: 500;
 }
 .input-group input {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
     width: 100%;
     padding: 0.7rem;
     border: 1.5px solid #bdbdbd;
@@ -52,17 +55,20 @@ body {
     font-size: 1rem;
     background: #ededed;
     box-shadow: 0 1px 2px #e0e0e0 inset;
+                    text-align: center;
     transition: border 0.2s, box-shadow 0.2s;
 }
 .input-group input:focus {
-    border: 1.5px solid #757575;
+                    width: 90%;
     outline: none;
     box-shadow: 0 0 6px #bdbdbd;
 }
 
 button[type="submit"] {
-    width: 100%;
-    padding: 0.8rem;
+                    box-shadow: none;
+                    transition: border 0.2s, box-shadow 0.2s;
+                    display: block;
+                    margin: 0 auto;
     background: linear-gradient(90deg, #43ea7a 0%, #1eae60 100%);
     color: #fff;
     border: none;

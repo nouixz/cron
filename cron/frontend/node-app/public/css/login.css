@@ -76,16 +76,3 @@ button[type="submit"]:hover {
     box-shadow: 0 4px 16px 0 #bdbdbd;
 }
 
-.signup-link {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 0.95rem;
-}
-.signup-link a {
-    color: #757575;
-    text-decoration: none;
-    font-weight: 500;
-}
-.signup-link a:hover {
-    text-decoration: underline;
-}
